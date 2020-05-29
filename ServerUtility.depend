@@ -3003,37 +3003,42 @@
 	"ServerUtilityApp.h"
 	"StartWindow.h"
 
-1590670272 c:\work\git\serverutility\src\serverutilityapp.h
+1590757625 c:\work\git\serverutility\src\serverutilityapp.h
 	<wx/app.h>
+	"StartWindow.h"
 
-1590674183 source:c:\work\git\serverutility\src\serverutilityapp.cpp
+1590757657 source:c:\work\git\serverutility\src\serverutilityapp.cpp
 	"wx_pch.h"
 	"wx/wxprec.h"
 	"wx/wx.h"
 	"ServerUtilityApp.h"
-	"StartWindow.h"
 
 1590664685 c:\work\git\serverutility\src\wx_pch.h
 	<wx/wxprec.h>
 	<wx/wx.h>
 
-1590673846 source:c:\work\git\serverutility\ui\startwindow.cpp
+1590753041 source:c:\work\git\serverutility\ui\startwindow.cpp
 	"StartWindow.h"
 
-1590675037 c:\work\git\serverutility\ui\startwindow.h
+1590759665 c:\work\git\serverutility\ui\startwindow.h
 	<wx/artprov.h>
 	<wx/xrc/xmlres.h>
-	<wx/sizer.h>
-	<wx/gdicmn.h>
 	<wx/string.h>
 	<wx/bitmap.h>
 	<wx/image.h>
 	<wx/icon.h>
-	<wx/menu.h>
+	<wx/gdicmn.h>
+	<wx/button.h>
 	<wx/font.h>
 	<wx/colour.h>
 	<wx/settings.h>
+	<wx/sizer.h>
+	<wx/listctrl.h>
+	<wx/listbox.h>
+	<wx/menu.h>
 	<wx/frame.h>
+	<wx/stattext.h>
+	<wx/dialog.h>
 
 1587539368 c:\wxwidgets-3.0.5\include\wx\xrc\xmlres.h
 	"wx/defs.h"

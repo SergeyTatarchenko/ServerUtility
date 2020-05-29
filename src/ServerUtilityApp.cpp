@@ -22,13 +22,35 @@
 #endif //__BORLANDC__
 
 #include "ServerUtilityApp.h"
-#include "StartWindow.h"
+
 
 bool ServerUtilityApp::OnInit()
 {
-    MainWindow *frame = new MainWindow((wxFrame*) NULL, -1, _T("Server Utility v 0.1"));
-    frame->SetIcon(wxICON(def)); /*setup application icon*/
-    frame->Show();
-	SetTopWindow(frame);
+
+    MainWindow *TopFrame = new MainWindow((wxFrame*) NULL, -1, _T("Server Utility v 0.1"));
+    TopFrame->SetIcon(wxICON(def)); /*setup application icon*/
+    TopFrame->Show();
+	SetTopWindow(TopFrame);
     return true;
+}
+
+
+/*
+*Handlers for main frame widgets
+*/
+
+void MainWindow::MainFileFrogramOut( wxCommandEvent& event )
+{
+    this->Close(true);
+}
+
+void MainWindow::AboutDialogEvent( wxCommandEvent& event )
+{
+    AboutDialog *dialog = new AboutDialog((wxWindow*) NULL);
+    dialog->ShowModal();
+}
+
+void AboutDialog::AboutDialogClose( wxCommandEvent& event )
+{
+    this->Destroy();
 }

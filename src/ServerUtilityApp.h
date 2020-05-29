@@ -12,6 +12,7 @@
 
 #include <wx/app.h>
 
+#include "StartWindow.h"
 
 class ServerUtilityApp : public wxApp
 {
@@ -19,6 +20,28 @@ public:
 	virtual bool OnInit();
 };
 
-DECLARE_APP(ServerUtilityApp)
+//wxEvtHandler
 
+class MainWindow : public MainWindowUI
+{
+    private:
+
+	protected:
+        void MainFileFrogramOut( wxCommandEvent& event );
+        void AboutDialogEvent( wxCommandEvent& event );
+
+    public:
+        using MainWindowUI::MainWindowUI;
+
+};
+
+ class AboutDialog : public AboutDialogUI
+ {
+     private:
+	protected:
+	    void AboutDialogClose( wxCommandEvent& event );
+    public:
+        using AboutDialogUI::AboutDialogUI;
+
+ };
 #endif // SERVERUTILITYAPP_H
